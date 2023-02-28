@@ -12,7 +12,7 @@ app.use(cors())
 
 app.get("/", function(req, res){
 
-    document.location.reload("https://turkweb.pl/")
+    res.send("siema")
 })
 
 app.get("/add/:imie/:nazwisko", function(req, res){
@@ -23,7 +23,7 @@ app.get("/add/:imie/:nazwisko", function(req, res){
 
 
 
-    console.log(`imie: ${imie} nazwisko: ${nazwisko}`)
+    console.log(`imie: ${imie}, nazwisko: ${nazwisko}`)
     console.log("izi bobi")
     
 })
